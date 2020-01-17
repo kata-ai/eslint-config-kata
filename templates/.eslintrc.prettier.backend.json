@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint-config-kata", "eslint-config-prettier", "prettier/@typescript-eslint", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

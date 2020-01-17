@@ -1,0 +1,51 @@
+{
+  "name": "eslint-config-kata",
+  "version": "1.0.0",
+  "description": "ESLint config used at Kata.ai",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "react.js",
+    "rules"
+  ],
+  "repository": "https://github.com/kata-ai/eslint-config-kata.git",
+  "author": "Kata.ai <dev@kata.ai>",
+  "contributors": [
+    {
+      "name": "Resi Respati",
+      "url": "https://resir014.xyz",
+      "email": "resi@kata.ai"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {},
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@types/node": "^12.7.2",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^3.0.4",
+    "prettier": "^1.18.2",
+    "typescript": "3.7.4"
+  },
+  "peerDependencies": {
+    "eslint": "^6.1.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "~2.14.0",
+    "@typescript-eslint/parser": "~2.14.0",
+    "eslint-config-airbnb": "~18.0.1",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
