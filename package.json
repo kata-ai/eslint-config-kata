@@ -20,7 +20,8 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\""
+    "lint": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "validate": "yarn lint"
   },
   "devDependencies": {
     "@commitlint/cli": "^9.1.1",
