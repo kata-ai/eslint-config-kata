@@ -43,6 +43,28 @@ To recap:
 - `minor`: Potentially breaking changes that's still within the same major version of ESLint
 - `patch`: Minor patches/bugfixes
 
+## Using TypeScript
+
+To use `eslint-config-kata` with TypeScript, you need to do a little additional setup to make `eslint-plugin-import` play well with TypeScript. First, install `eslint-import-resolver-typescript`.
+
+```bash
+# yarn
+yarn add --dev eslint-import-resolver-typescript
+```
+
+Then, on .eslintrc:
+
+```json
+{
+  // other configuration are omitted for brevity
+  "settings": {
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
+  }
+}
+```
+
 ## Using Prettier
 
 [Prettier](https://prettier.io/) is a tool to automatically format your code during save. It supports various editors, from VSCode, Atom, Sublime, and even Emacs.
