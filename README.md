@@ -52,17 +52,17 @@ To use `eslint-config-kata` with TypeScript, you need to do a little additional 
 yarn add --dev eslint-import-resolver-typescript
 ```
 
-Then, on .eslintrc:
+Then, on `.eslintrc`:
 
-```json
-{
+```js
+module.exports = {
   // other configuration are omitted for brevity
-  "settings": {
-    "import/resolver": {
-      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
-    }
-  }
-}
+  settings: {
+    'import/resolver': {
+      typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+    },
+  },
+};
 ```
 
 ## Using Prettier
