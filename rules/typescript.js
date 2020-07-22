@@ -73,4 +73,4 @@ module.exports = {
     },
     'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
   },
-}
+};
