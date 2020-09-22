@@ -9,7 +9,6 @@ module.exports = {
     jest: true,
   },
   parserOptions: {
-    ecmaVersion: 2019,
     sourceType: 'module',
     ecmaFeatures: {
       impliedStrict: true,
