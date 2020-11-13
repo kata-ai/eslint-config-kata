@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-kata",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "ESLint config used at Kata.ai",
   "main": "index.js",
   "files": [
