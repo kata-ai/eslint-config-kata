@@ -27,6 +27,11 @@ module.exports = {
         // No need to add return type for functions, it's inferred already.
         '@typescript-eslint/explicit-function-return-type': ['off'],
 
+        // Override base eslint rule.
+        // https://github.com/typescript-eslint/typescript-eslint/issues/2540
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
+
         // Allow `.ts` and `.tsx` extensions to be omitted
         'import/extensions': [
           'error',
